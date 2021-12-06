@@ -1,13 +1,10 @@
-const path = require('path');
-
-
 const userController = {
     login : (req,res)=>{
-        res.render('/users/login')
+        return res.render('users/login')
     },
 
     register : (req,res)=>{
-        res.render('/users/register')
+        return res.render('users/register')
     }
 }
 
