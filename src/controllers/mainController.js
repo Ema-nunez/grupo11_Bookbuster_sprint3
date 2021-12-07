@@ -1,5 +1,5 @@
 const mainController = {
-    index : function(req,res){
+    index : (req,res)=>{
         return res.render('products/index')
     }
 }
