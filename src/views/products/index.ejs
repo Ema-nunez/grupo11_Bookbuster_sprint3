@@ -28,63 +28,30 @@
         
         <h2>NOVEDADES</h2>
         <section class="Productos-relacionados">
-        
-        <article>
-        <a href="/products/productDetail"><img src="images/spyxfamily02.jpg" alt="spyxfamily02"></a>
-        <div class="main-product">
-                <h3>Spy x Family 02 <i class="fas fa-book"></i></h3>
-                <p>$550</p>
-                <form action="/views/home.html" method="POST">
-                <input type="submit" class="btn3" value="Agregar al carrito">
-                </form>
-            </div>
-        </article>
-
-        <article>
+        <!-- Foreach que ayuda a evitar crear varios articulos de forma estatica -->
+        <% mangas.forEach(element => { %>
+            <article>
+                <a href="/products/productDetail"><img src="<%= element.img %> " alt="portadas"></a>
+                <div class="main-product">
+                    <h3><%= element.nombre %> <i class="fas fa-book"></i></h3>
+                    <p>$<%= element.precio %> </p>
+                    <form action="/views/home.html" method="POST">
+                        <input type="submit" class="btn3" value="Agregar al carrito">
+                        </form>
+                </div>
+            </article>
             
-            <a href="/product"><img src="images/spyxfamily03.jpg" alt="spyxfamily02"></a>
-            <div class="main-product">
-            <h3>Spy x Family 03 <i class="fas fa-book"></i></h3>
-                <p>$550</p>
-                <form action="/views/home.html" method="POST">
-                <input type="submit" class="btn3" value="Agregar al carrito">
-                </form>
-            </div>
-        </article>
+        <% }) %>
 
+    </section>
+
+    <h2>OFERTAS</h2>
+    <section class="Productos-relacionados">
         <article>
-            <a href="/product"><img src="images/spyxfamily06.jpg" alt="spyxfamily02"></a>
-              <div class="main-product">
-                  
-                  <h3>Spy x Family 06 <i class="fas fa-book"> </i></h3>
-                  <p>$550</p>
-                  <form action="/views/home.html" method="POST">
-                  <input type="submit" class="btn3" value="Agregar al carrito">
-                  </form>
-              </div>
-          </article>
-
-          <article>
-            <a href="/product"><img src="images/spyxfamily07.jpg" alt="spyxfamily02"></a>
-              <div class="main-product">
-                  
-                  <h3>Spy x Family 07 <i class="fas fa-book"></i></h3>
-                  <p>$550</p>
-                  <form action="/views/home.html" method="POST">
-                  <input type="submit" class="btn3" value="Agregar al carrito">
-                  </form>
-              </div>
-          </article>
-      </section>
-
-      <h2>OFERTAS</h2>
-      <section class="Productos-relacionados">
-          
-        <article>
-          <a href="/product"><img src="images/productoOferta1.jpg" alt="spyxfamily02"></a>
+            <a href="/product"><img src="images/producto10.jpg" alt="spyxfamily02"></a>
             <div class="main-product">
                 
-                <h3>Metal Gear Solid<i class="fas fa-book"></i></h3>
+                <h3>Zelda<i class="fas fa-book"></i></h3>
                 <p>$550</p>
                 <form action="/views/home.html" method="POST">
                 <input type="submit" class="btn3" value="Agregar al carrito">
@@ -93,10 +60,9 @@
         </article>
 
         <article>
-          
-            <a href="/product"><img src="images/productoOferta2.jpg" alt="spyxfamily02"></a>
+            <a href="/product"><img src="images/producto13.jpg" alt="spyxfamily02"></a>
             <div class="main-product">
-                <h3>Teenage Mutant Ninja Turtles<i class="fas fa-book"></i></h3>
+                <h3>Dragon Ball Super<i class="fas fa-book"></i></h3>
                 <p>$550</p>
                 <form action="/views/home.html" method="POST">
                 <input type="submit" class="btn3" value="Agregar al carrito">
@@ -105,22 +71,22 @@
         </article>
 
         <article>
-          <a href="/product"><img src="images/productoOferta3.jpg" alt="spyxfamily02"></a>
-            <div class="main-product">
-                
-                <h3>The Amazing Spider-Man <i class="fas fa-book"> </i></h3>
-                <p>$550</p>
-                <form action="/views/home.html" method="POST">
-                <input type="submit" class="btn3" value="Agregar al carrito">
-                </form>
-            </div>
-        </article>
-
-        <article>
-          <a href="/product"><img src="images/productoOferta4.jpg" alt="spyxfamily02"></a>
+            a href="/product"><img src="images/producto15.jpg" alt="spyxfamily02"></a>
             <div class="main-product">
                 
-                <h3>Justice League <i class="fas fa-book"></i></h3>
+                <h3>One piece <i class="fas fa-book"> </i></h3>
+                <p>$550</p>
+                <form action="/views/home.html" method="POST">
+                <input type="submit" class="btn3" value="Agregar al carrito">
+                </form>
+            </div>
+        </article>
+
+        <article>
+            <a href="/product"><img src="images/spyxfamily01.jpg" alt="spyxfamily02"></a>
+            <div class="main-product">
+                
+                <h3>Spy x Family 07 <i class="fas fa-book"></i></h3>
                 <p>$550</p>
                 <form action="/views/home.html" method="POST">
                 <input type="submit" class="btn3" value="Agregar al carrito">
@@ -129,10 +95,10 @@
         </article>
     </section>
 
-  </main>
+</main>
 
 
     <!--PIE DE PAGINA-->
     <%- include('../partials/footer') %>
-  </body>
+</body>
 </html>
