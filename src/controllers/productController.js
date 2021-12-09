@@ -8,7 +8,11 @@ const productController = {
     },
 
     agregarProducto : (req,res)=>{
-        res.render('products/agregarProducto')
+        res.render('products/agregarProducto');
+    },
+    
+    editarProducto : (req,res)=>{
+        res.render('products/editarProducto');
     }
 }
 

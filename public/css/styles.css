@@ -943,6 +943,67 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 30px;
 }
 /* Fin de los estilos del carrito de compras */
+
+/* Estilos de agregarProducto */
+
+    .agregar-conteiner{
+        display: flex;
+        
+    }
+
+    .formAdd{
+        width: 80%;
+        margin: auto;
+    }
+    .formAdd p{
+        margin-top: 3%;
+    }
+    .formAdd input[type="text"], .formAdd input[type="number"]{
+        width: 100%;
+        outline: none;
+    }
+    .formAdd select{
+        width: 40%;
+    }
+    .formAdd textarea{
+        width: 100%;
+        outline: none;
+    }
+    .botones-agregar{
+        margin: 3%;
+        text-align: center;
+        
+    }
+    .botones-agregar input[type="submit"]{
+        padding: 7px;
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    .botones-agregar a{
+        padding: 7px;
+        background-color: rgb(55, 148, 95);
+        color:white;
+        border: none;
+        border-radius: 5px;       
+        font-size: 1em;
+        text-decoration: none;
+    }
+
+    .botones-agregar input[type="submit"]:hover{
+        background-color:#349add ;
+    }
+
+    .botones-agregar a:hover{
+        background-color: rgb(53, 189, 112);
+    }
+/* Fin de los estilos de agregarProducto */
+
+
+
 @media (min-width: 760px) {
 
     /*CARGANDO ESTILOS DE PRODUCTO*/
@@ -1092,6 +1153,12 @@ input[type="number"]::-webkit-outer-spin-button {
         flex-direction: row;
     }
     /* fin de los estilos del carrito en tablet */
+
+    /* Estilos del agregarProduct en tablet */
+    .formAdd{
+        width: 60%;
+    }
+    /* Fin de los estilos de agregarProduct en tablet */
 }
 
 @media (min-width: 1000px){
@@ -1235,6 +1302,29 @@ input[type="number"]::-webkit-outer-spin-button {
         height: auto;
     }
     /* Fin de los estilos del carrito en pc */
+
+    /* Estilos del agregarProducto en pc */
+    .formAdd{
+        width: 50%;
+    }
+
+    .formAdd p{
+        font-size: 1.2em;
+    }
+
+    .formAdd input{
+        font-size: 20px;
+    }
+
+    .formAdd select{
+        font-size: 17px;
+    }
+    .formAdd input[type="submit"], .formAdd a{
+        font-size: 1.1em;
+    }
+
+    
+    /* Fin de los estilos de pc de agregarProducto */
 }
 
 @media (min-width: 1200px){
@@ -1273,4 +1363,5 @@ input[type="number"]::-webkit-outer-spin-button {
     article div.main-product p {
         font-size: 25px;
     }
+    
 }
